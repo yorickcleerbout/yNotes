@@ -27,7 +27,7 @@ export const Navbar = () => {
                             <Button variant="ghost" size="sm">Login</Button>
                         </SignInButton>
                         <SignInButton mode="modal">
-                            <Button size="sm">Get yNotes Free</Button>
+                            <Button size="sm">Get yNotes for Free</Button>
                         </SignInButton>
                     </>
                 )}
