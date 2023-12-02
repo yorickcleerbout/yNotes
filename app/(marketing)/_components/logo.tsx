@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 const font = Poppins({
     subsets: ["latin"],
@@ -8,8 +9,9 @@ const font = Poppins({
 });
 
 export const Logo = () => {
+    const router = useRouter();
     return (
-        <div className="hidden md:flex items-center gap-x-2">
+        <div className="hidden md:flex items-center gap-x-2 cursor-pointer" onClick={() => router.push('/')}>
             <Image
                 src="/logo.svg"
                 height="40"
